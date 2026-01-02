@@ -1,0 +1,11 @@
+<div style="padding: 20px; font-family: sans-serif">
+  <h2>Register</h2>
+
+  <input type="text" placeholder="Name" [(ngModel)]="registerObj.name" /> <br /><br />
+  <input type="email" placeholder="Email" [(ngModel)]="registerObj.email" /> <br /><br />
+  <input type="password" placeholder="Password" [(ngModel)]="registerObj.password" /> <br /><br />
+
+  <button (click)="onRegister()">Register</button>
+
+  <p>Already have an account? <a href="/login">Login here</a></p>
+</div>

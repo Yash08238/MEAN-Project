@@ -1,0 +1,10 @@
+<div style="padding: 20px; font-family: sans-serif">
+  <h2>Login</h2>
+
+  <input type="email" placeholder="Email" [(ngModel)]="loginObj.email" /> <br /><br />
+  <input type="password" placeholder="Password" [(ngModel)]="loginObj.password" /> <br /><br />
+
+  <button (click)="onLogin()">Login</button>
+
+  <p>Need an account? <a href="/register">Register here</a></p>
+</div>
