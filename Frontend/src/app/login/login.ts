@@ -29,7 +29,7 @@ export class LoginComponent {
         // Save the token for security
         localStorage.setItem('token', res.token);
         // Send them to a "home" page (or just stay here for now)
-        this.router.navigate(['/']);
+        this.router.navigate(['/home']);
       },
       error: (err) => {
         alert('Error: ' + err.error.message);
