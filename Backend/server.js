@@ -7,7 +7,8 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect('mongodb://127.0.0.1:27017/userdb')
-.then(() => console.log('MongoDB Connected'));
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.error('MongoDB Connection Error:', err));
 
 app.use('/api/auth', require('./routes/auth'));
 

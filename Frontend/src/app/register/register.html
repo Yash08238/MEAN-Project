@@ -1,11 +1,32 @@
-<div style="padding: 20px; font-family: sans-serif">
-  <h2>Register</h2>
+<div class="register-container">
+  <div class="register-card">
+    <div class="register-header">
+      <h2>Create Account</h2>
+      <p>Join us today! Enter your details below.</p>
+    </div>
 
-  <input type="text" placeholder="Name" [(ngModel)]="registerObj.name" /> <br /><br />
-  <input type="email" placeholder="Email" [(ngModel)]="registerObj.email" /> <br /><br />
-  <input type="password" placeholder="Password" [(ngModel)]="registerObj.password" /> <br /><br />
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input id="name" type="text" placeholder="Enter your full name" [(ngModel)]="registerObj.name"
+        class="form-control" />
+    </div>
 
-  <button (click)="onRegister()">Register</button>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input id="email" type="email" placeholder="Enter your email" [(ngModel)]="registerObj.email"
+        class="form-control" />
+    </div>
 
-  <p>Already have an account? <a href="/login">Login here</a></p>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Create a password" [(ngModel)]="registerObj.password"
+        class="form-control" />
+    </div>
+
+    <button class="btn btn-primary btn-full-width" (click)="onRegister()">Sign Up</button>
+
+    <div class="register-footer">
+      <p>Already have an account? <a href="/login">Sign in</a></p>
+    </div>
+  </div>
 </div>

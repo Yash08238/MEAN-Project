@@ -1,0 +1,100 @@
+/* Container to center the card */
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: var(--spacing-md);
+    background-color: var(--bg-color);
+}
+
+/* Card styling */
+.register-card {
+    background: var(--surface-color);
+    width: 100%;
+    max-width: 420px;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+/* Header styling */
+.register-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.register-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-main);
+    letter-spacing: -0.025em;
+}
+
+.register-header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    background-color: var(--surface-color);
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+/* Button styling specific additions */
+.btn-full-width {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+    font-size: 1rem;
+}
+
+/* Footer styling */
+.register-footer {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.register-footer a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.register-footer a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
